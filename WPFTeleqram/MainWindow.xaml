@@ -1,0 +1,148 @@
+﻿<Window x:Class="WPFTeleqram.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFTeleqram"
+        mc:Ignorable="mc"
+        Title="Telegam" Height="635" Width="1000"
+        ResizeMode="NoResize"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        Background="Transparent" 
+        Icon="/Telegram small icon.png"
+        >
+
+    <Canvas >
+
+        <Border CornerRadius="20"
+                Background="White"
+                Height="635"
+                Width="1000" ></Border>
+
+        <Image Source="Images/Telegram small icon.png"
+               Height="40"
+               Canvas.Left="12"
+               Canvas.Top="8" 
+               Width="50"   />
+
+        <Label Content="Telegram"
+               FontSize="20"
+               FontWeight="Bold"
+               Canvas.Left="58"
+               Canvas.Top="10"></Label>
+
+        <TextBlock  Width="1000" 
+                    Height="1"
+                    Background="#D8D8D8 "
+                    Canvas.Top="55" ></TextBlock>
+
+        <Image Source="Images/daire.png"
+               Canvas.Left="763" 
+               Height="48" Width="68"
+               Canvas.Top="4"/>
+
+        <Label Content="Vitaly Medvedev" 
+               FontSize="18"
+               FontWeight="Normal"
+               Canvas.Right="50"
+               Canvas.Top="10" 
+               Canvas.Left="818" ></Label>
+
+        <Image Source="Images/arrow.png"
+               Canvas.Right="10"
+               Height="30"
+               Canvas.Left="965" 
+               Width="16" 
+               Canvas.Top="12"  ></Image>
+
+        <Label Content="VM"
+               FontSize="18"
+               Foreground="White"
+               Canvas.Right="10"
+               Canvas.Left="778" 
+               Canvas.Top="11" ></Label>
+
+        <TextBlock  Width="2"
+                    Height="580" 
+                    Background="#D8D8D8 "
+                    Canvas.Left="272" 
+                    Canvas.Top="55" />
+
+        <TextBlock  Width="1000"
+                    Height="1" 
+                    Background="#D8D8D8 "
+                    Canvas.Top="110" ></TextBlock>
+
+        <Image Source="Images/searchh.png" 
+               Canvas.Right="10" 
+               Height="21"
+               Canvas.Left="10
+               " Width="20" 
+               Canvas.Top="75" ></Image>
+
+        <TextBox MouseUp="searchTxtB_MouseLeftButtonUp"
+                 Name="searchTxtB" 
+                 Foreground="#D8D8D8" 
+                 Text="Search" 
+                 FontSize="16" 
+                 Canvas.Left="39" 
+                 Canvas.Top="75" 
+                 Width="230"
+                 Height="28"
+                 BorderThickness="0" ></TextBox>
+
+        <Label Content="Resent" 
+               FontSize="13" 
+               FontWeight="Bold"
+               Foreground="Gray"
+               Canvas.Right="10"
+               Canvas.Left="10" 
+               Canvas.Top="120" ></Label>
+
+        <Image Source="Images/arrow.png"
+               Canvas.Right="10" 
+               Height="14" 
+               Canvas.Left="245" 
+               Width="13"  
+               Canvas.Top="125" ></Image>
+
+        <Ellipse Height="41"
+                 Width="41" 
+                 Canvas.Left="291" 
+                 Canvas.Top="63" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="Images/cat.jpg"
+                            Stretch="Fill" ></ImageBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+
+        <Label Content="Girl"
+               FontSize="21"
+               Foreground="Black"
+               Canvas.Right="10"
+               Canvas.Left="341" 
+               Canvas.Top="64" HorizontalAlignment="Center" VerticalAlignment="Top" ></Label>
+
+        <Button Height="55" 
+                Width="271" 
+                Canvas.Top="155"
+                Background="White"
+                BorderThickness="0"
+                >
+            <Label FontSize="18" Width="160">
+                Allisa Porshe
+            </Label>
+
+        </Button>
+        <Ellipse Height="41"
+                 Width="41" HorizontalAlignment="Left" Canvas.Top="163" VerticalAlignment="Center" Canvas.Left="10"
+                 >
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="Images/cat.jpg"
+                            Stretch="Fill"></ImageBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+    </Canvas>
+</Window>
